@@ -5,7 +5,8 @@ on:
       - main
 jobs:
   deployment:
-    runs-on: ubuntu-latest
+    runs-on: nginx
     steps:
       - uses: actions/checkout@v4
-      
+      - name: say hello!
+        run: echo "Hello there!"
