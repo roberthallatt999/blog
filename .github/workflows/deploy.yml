@@ -11,4 +11,4 @@ jobs:
     
     steps:
     - name: pull
-      run: "git checkout main && git pull && exit"
+      run: "cd ~/app/robshomelab && git checkout main && git pull && exit"
