@@ -7,7 +7,7 @@ jobs:
   deployment:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v3
       - name: say hello!
         run: echo "Hello there. This is a test!"
       
