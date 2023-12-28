@@ -7,7 +7,7 @@ jobs:
   deployment:
     runs-on: nginx
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2
       - name: say hello!
         run: echo "Hello there. This is a test!"
     concurrency:
