@@ -10,3 +10,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: say hello!
         run: echo "Hello there!"
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
