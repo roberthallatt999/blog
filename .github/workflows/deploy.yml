@@ -11,4 +11,4 @@ jobs:
     
     steps:
     - name: pull repository
-      run: "cd ${{ secrets.WORK_DIR }} && git checkout ${{ secrets.MAIN_BRANCH }} && git pull && exit"
+      run: "git checkout ${{ secrets.MAIN_BRANCH }} && git pull && exit"
