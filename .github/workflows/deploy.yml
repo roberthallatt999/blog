@@ -11,4 +11,4 @@ jobs:
     
     steps:
     - name: pull
-      run: "cd ${{ secrets.WORK_DIR }} && git checkout ${{ secrets.MAIN_BRANCH }} && git pull && exit"
+      run: "cd /usr/share/nginx/html && git checkout main && git pull && exit"
