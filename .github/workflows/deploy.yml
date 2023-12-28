@@ -11,4 +11,4 @@ jobs:
     
     steps:
     - name: pull
-      run: "cd /usr/share/nginx/html && git checkout main && git pull && exit"
+      run: "git checkout main && git pull && exit"
