@@ -17,7 +17,7 @@ jobs:
           SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         
         run: |
-          echo $SSH_KEY | base64 -d > ssh-key
+          bash -c 'base64 --decode <<< "$SSH_KEY" > ssh-key'
           chmod 400 ssh-key
           ssh -i ssh-key -o StrictHostKeyChecking=no root@docker "cd /root/app/robshomelab && GIT_SSH_COMMAND='ssh -i /root/.ssh/ssh-key' git pull origin main"
 
