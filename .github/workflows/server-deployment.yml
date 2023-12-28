@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   deployment:
-    runs-on: nginx
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: say hello!
