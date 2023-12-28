@@ -10,18 +10,6 @@ jobs:
     runs-on: self-hosted
     
     steps:
-
-    - name: Checkout
-      uses: self-hosted
-      with:
-        fetch-depth: 0  # for posts's lastmod
-        submodules: true
-
-    - name: Setup Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.7
-        bundler-cache: true
-        
+      
     - name: pull
       run: "cd ~/app/robshomelab && git checkout main && git pull && exit"
