@@ -1,3 +1,10 @@
+# Refernce links
+# 
+# - Github actions docs - https://docs.github.com/en/actions
+# - Set up self-hosted runner - https://tilburgsciencehub.com/topics/automation/automation-tools/deployment/ghactions-self-hosted-runner/
+# - Turn the runner into a service - https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/configuring-the-self-hosted-runner-application-as-a-service
+#
+
 on:
   push:
     branches:
