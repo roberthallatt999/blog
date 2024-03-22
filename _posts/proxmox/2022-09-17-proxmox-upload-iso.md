@@ -12,3 +12,11 @@ Sometimes, Proxmox doesn't play nice when you try to upload an ISO file. There c
 ```sh
 scp file_address root@192.xxx.x.xxx:/var/lib/vz/template/iso
 ```
+
+Or use wget to download the ISO
+
+## Centos 8
+
+```sh
+wget -c http://centos.les.net/8-stream/isos/x86_64/CentOS-Stream-8-20240129.0-x86_64-boot.iso -P /var/lib/vz/template/iso
+```
